@@ -55,8 +55,8 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
       }
       // if use gpt-latest model
       else if (model.toLowerCase().includes('gpt-latest')) {
-        options.maxModelTokens = 128000
-        options.maxResponseTokens = 16384
+        options.maxModelTokens = 1280000
+        options.maxResponseTokens = 1280000
       }
       else if (/-4o-mini/.test(model.toLowerCase())) {
         options.maxModelTokens = 128000
